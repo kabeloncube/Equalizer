@@ -1,0 +1,206 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--text-color: #F54B64;
+	--dark-grey: #4E586E;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+
+main {
+	min-height: 100vh;
+	background-image: url(../images/city.jpg);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#glass {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000000a1;
+	height: 80vh;
+	width: 90%;
+	z-index: 2;
+	padding: 10px;
+	backdrop-filter: blur(1rem);
+	position: absolute;
+}
+
+
+nav {
+	display: inline-block;
+	top: 0;
+	padding: 10px;
+	width: 100%;
+
+}
+
+#nav-bar {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#logo {
+	font-variant-caps: all-petite-caps;
+	color: #F54B64;
+	font-weight: 10px;
+	font-size: 5rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 10px;
+
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	padding: 50px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color);
+	padding: 10px;
+}
+
+p {
+	background: linear-gradient(to top, #F54B64, #F78361);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.main-content {
+	position: absolute;
+	background: linear-gradient(to right, #F78361, #F54B64);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 10rem;
+}
+
+.main-content h1 {
+	padding: 10px;
+}
+
+/* Mobile view */
+@media (max-width: 870px) {
+
+	main {
+		background-image: url(../images/sunset.jpg);
+	}
+
+	#logo {
+		color: #fff;
+	}
+
+	a {
+		color: #fff;
+	}
+
+	p {
+	background: linear-gradient(to top, #2600fd46, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+	#glass {
+		background: #2600fd46;
+		backdrop-filter: none;
+	}
+
+	.main-content {
+		background: linear-gradient(to top, #2600fd46, #fff);
+		-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+		font-size: 7rem;
+	}
+
+	#container {
+		background: #2600fd46;
+	}
+}
+/*Mobile view*/
+@media (max-width: 450px){
+	main {
+		background-image: url(../images/path.jpg);
+	}
+
+	#logo {
+		color: #F54B64;
+	}
+
+	#glass {
+		background: #000000a1;
+		height: 90vh;
+	}
+
+	nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	ul {
+		display: inline-block;
+		padding: 10px
+	}
+
+	li {
+		padding: 10px;
+	}
+
+	a {
+		color: #F54B64;
+	}
+
+	.main-content h1 {
+		writing-mode: vertical-rl;
+		background: linear-gradient(to top, #F54B64, #2600fd81);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 8rem;
+	}
+
+	p {
+	background: linear-gradient(to top, #2600fd46, #F54B64);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+}
+
+#container {
+	position: absolute;
+	width: 40%;
+	z-index: 4;
+	bottom: 0;
+	left: 0;
+	background: #000000a1;
+	backdrop-filter: blur(2rem);
+	padding: 10px;
+
+}
+
+/*footer*/
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+}
